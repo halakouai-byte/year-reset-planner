@@ -1,0 +1,63 @@
+# 2027 Year Reset Planner Pack — llms.txt
+# Plain-text product summary for LLM crawlers.
+# Canonical site: https://year-reset-planner.pages.dev/
+
+## What it is
+The 2027 Year Reset Planner Pack is a 14-page printable PDF planner (A4;
+it also prints on US Letter with fit-to-page). It helps the buyer close
+2026 honestly and plan 2027 in one short session, then track the year with
+a monthly check-in and a habit tracker. There is no app, no subscription
+and no AI at runtime — it is a static PDF to print and write on by hand.
+
+## What's inside (14 pages, in order)
+1. Cover
+2. How to use (the 15-minute first pass and the monthly check-in)
+3. 2026 Wins (top 10)
+4. Lessons & Letting Go
+5. 2026 in Numbers
+6. 2027 Vision
+7. Goals by life area
+8. Top 3 Goals breakdown (milestones, first step, deadline)
+9. 90-Day Plan — Q1
+10. Weekly rhythm
+11. Monthly Check-In
+12. 365-Day Habit Tracker (3 habits x 12 months x 31 days)
+13. BONUS — Year-End Money Close-Out (accounts, debts, subscriptions
+    audit, net worth)
+14. Commitment + notes
+
+## Price
+$3.00, one-time payment. Payment is in USDT on the TON network only
+(crypto only). There is no card or PayPal option, and crypto payments
+cannot be reversed automatically.
+
+## How to buy
+1. On the sales page, tap Buy. An order is created with a unique order
+   code (for example YR-XXXXXX).
+2. Pay exactly $3.00 USDT on TON from a wallet such as Keeper
+   (Tonkeeper), using the pre-filled payment link. Do not edit or delete
+   the order code in the payment memo.
+3. Tap "I paid" in the Telegram bot. The payment is verified on-chain
+   and the PDF is delivered by the bot, usually within a minute or two.
+   Orders expire after 60 minutes; late or mismatched payments go to
+   manual review.
+
+## Free sample
+A free 2-page watermarked sample (pages 7 and 12 of the pack) is
+available at https://year-reset-planner.pages.dev/sample.pdf
+
+## Honest notes
+- Seasonal product: the peak buying window is 26 December to 15 January;
+  after 31 January a year reset planner is effectively out of date.
+- A fair price for a short reset pack of roughly 10 to 30 pages is $3 to
+  $10; larger planners cost more.
+- No testimonials, ratings, sales numbers or reviews are claimed for this
+  product. No income, results or "new year, new life" promises are made.
+- The product file itself is never at a public URL; it is delivered only
+  by the Telegram bot after a verified payment.
+
+## Links
+- Sales page: https://year-reset-planner.pages.dev/
+- Buying guide: https://year-reset-planner.pages.dev/article.html
+- Free sample: https://year-reset-planner.pages.dev/sample.pdf
+- Source (public repo): https://github.com/halakouai-byte/year-reset-planner

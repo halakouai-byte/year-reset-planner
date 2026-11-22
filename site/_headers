@@ -1,0 +1,18 @@
+# 2027 Year Reset Planner Pack — Cloudflare Pages headers (site/ is the deploy root).
+# Pattern: prompt-pack's _headers, adapted. This page is a single self-contained
+# HTML file (inline <style> + inline buy-flow <script>), so script-src and
+# style-src need 'unsafe-inline' until the JS/CSS move to external files —
+# without it the page renders unstyled and the Buy button's fetch breaks.
+# connect-src is the Worker only: the buy flow POSTs to /api/order there.
+# HSTS is set here (liveforge sets it in the dashboard only — this repo
+# sets it in the file).
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), autoplay=(), encrypted-media=(), fullscreen=(self), picture-in-picture=()
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src https://year-reset-bot.halakouai-byte.workers.dev; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+  Cache-Control: public, max-age=3600, must-revalidate
