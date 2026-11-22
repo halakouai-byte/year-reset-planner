@@ -1,0 +1,8 @@
+# NEVER commit the product file: product/*.pdf is delivered ONLY by the
+# Telegram bot via a cached file_id — it must never be at a public URL.
+product/
+__pycache__/
+*.pyc
+node_modules/
+.wrangler/
+.DS_Store
