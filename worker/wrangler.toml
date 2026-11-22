@@ -1,0 +1,37 @@
+# wrangler.toml — 2027 Year Reset Planner Pack storefront bot (Cloudflare Worker)
+# ---------------------------------------------------------------------------
+# NO SECRETS IN THIS FILE. Ever. Secrets are set with `wrangler secret put`
+# (see README.md) and reach the Worker only as encrypted environment
+# variables. This file is safe to commit to a public GitHub repo.
+# ---------------------------------------------------------------------------
+
+name = "year-reset-bot"
+main = "src/worker.js"
+compatibility_date = "2026-11-20"
+
+# Free plan: 100,000 requests/day. This bot uses ~1 request per Telegram
+# update + 1 TonAPI call per cron sweep. Nothing here comes close to the cap.
+
+# --- Non-secret configuration (public values only) --------------------------
+[vars]
+PRODUCT_PRICE_USDT = "3.00"      # price in USDT; change here to reprice
+ORDER_TTL_MINUTES = "60"         # order expiry; late payments go to manual review
+TON_PRICE_USD = "1.00"           # fallback TON/USD rate if TonAPI rates is down
+SUPPORT_USERNAME = ""            # seller's public Telegram @ (no @) — filled in at deploy time
+BOT_USERNAME = ""                  # real bot @ (no @) — used for landing-page claim links; filled in at deploy time
+
+# --- KV: order records, tx-hash dedup, rate-limit state ---------------------
+# Create it once, then paste the id below:
+#   wrangler kv namespace create ORDERS_KV
+#   wrangler kv namespace create ORDERS_KV --preview
+[[kv_namespaces]]
+binding = "ORDERS_KV"
+id = "f1ac21086ba7471a97eafb18d4077efd"
+preview_id = "0cefe01e84724498a378ab39d481f291"
+
+# --- Cron: payment sweep every 2 minutes ------------------------------------
+# Free plan allows 5 cron triggers; this uses 1. Each sweep makes ONE TonAPI
+# call + ONE TON Center call and matches them locally against all pending
+# orders (never one API call per order).
+[triggers]
+crons = ["*/2 * * * *"]
