@@ -194,6 +194,11 @@ cd worker && npx wrangler deploy
 - 2026-11-21 — Hub channel decision: ONE shared discovery channel for
   all Income Engine products (marketing only); each product keeps its
   OWN bot + automation (separation preserved for bots/automation).
+- 2026-11-22 — Repo created (public, `halakouai-byte/year-reset-planner`,
+  25 files, HEAD `a6e689b`) + Pages project `year-reset-planner` created
+  GitHub-connected (production branch `main`, deploy root `site/`, no
+  build command, preview deployments off). First Pages deploy triggered
+  by the push of this entry. Product PDF + REPORT-FA.md never in repo.
 - Standing: no token of any kind goes on GitHub; use only GitHub's
   native capabilities + Cloudflare. Every live project is separate —
   separate site, automation, bot, topic.
